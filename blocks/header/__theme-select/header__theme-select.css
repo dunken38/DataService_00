@@ -1,0 +1,25 @@
+.header__theme-select {
+  width: 24px;
+  height: 24px;
+  margin: auto 10px 0 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header__theme-select:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1600px) {
+  .header__theme-select {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__theme-select {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+.selection__input {
+  margin: auto;
+  line-height: 120%;
+  font-size: 18px;
+  background-color: white;
+  background-size: 18px 18px;
+  width: 130px;
+}
+
+.selection__input:focus {
+  outline: none;
+}
+
+#data-time-converter {
+  margin: 20px auto;
+  width: auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .selection__input {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .selection__input {
+    font-size: 14px;
+  }
+}

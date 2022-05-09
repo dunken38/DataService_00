@@ -1,0 +1,16 @@
+.help__iframe {
+  width: 10vw;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 1600px) {
+  .help__iframe {
+    
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .help__iframe {
+    
+  }
+}

@@ -1,0 +1,19 @@
+.iframe {
+  width: 80vw;
+  height: 80vh;
+  margin: 120px 0 30px 10%;
+  border: none;
+}
+
+@media screen and (max-width: 1600px) {
+  .iframe {
+    margin: 110px 0 20px 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .iframe {
+    min-width: 700px;
+    margin: 100px 0 10px 2%;
+  }
+}

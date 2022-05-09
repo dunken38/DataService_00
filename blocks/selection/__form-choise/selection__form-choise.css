@@ -1,0 +1,15 @@
+.selection__form-choise {
+  margin: 20px 0 10px 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .selection__form-choise {
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .selection__form-choise {
+    
+  }
+}

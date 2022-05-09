@@ -1,0 +1,20 @@
+.page__title {
+  font-size: 76px;
+  line-height: 120%;
+  text-align: center;
+  margin: 40vh 0 0 0;
+  color: grey;
+  opacity: 0.1;
+}
+
+@media screen and (max-width: 1600px) {
+  .page__title {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page__title {
+    font-size: 36px;
+  }
+}

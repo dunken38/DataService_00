@@ -1,0 +1,24 @@
+.selection__select {
+  margin: 0;
+  line-height: 120%;
+  font-size: 18px;
+  width: 180px;
+  height: 28px;
+  background-color: white;
+}
+
+#dataPropertiesSelect {
+  width: 60px;
+}
+
+@media screen and (max-width: 1600px) {
+  .selection__select {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .selection__select {
+    font-size: 14px;
+  }
+}

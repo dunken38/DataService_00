@@ -1,0 +1,13 @@
+.loading__table-tr {
+  border: 1px solid grey;
+  margin: auto;
+}
+
+.loading__table-tr:first-child {
+  background-color: grey;
+  color: white;
+}
+
+.loading__table-tr:nth-child(even) {
+  background-color: rgb(192, 192, 192);
+}

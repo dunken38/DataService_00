@@ -1,0 +1,16 @@
+.data__forms {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1600px) {
+  .data__forms {
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .data__forms {
+
+  }
+}

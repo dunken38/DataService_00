@@ -1,0 +1,17 @@
+.data__block-help {
+  margin: 15px 0;
+  max-width: 200px;
+  max-height: 100px;
+}
+
+@media screen and (max-width: 1600px) {
+  .data__block-help {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .data__block-help {
+    font-size: 14px;
+  }
+}

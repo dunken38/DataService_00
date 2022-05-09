@@ -1,0 +1,19 @@
+.footer {
+  width: 80vw;
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+}
+
+@media screen and (max-width: 1600px) {
+  .footer {
+    
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    min-width: 800px;
+    left: 2%;
+  }
+}

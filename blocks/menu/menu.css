@@ -1,0 +1,22 @@
+.menu {
+  width: 80vw;
+  height: 30px;
+  background-color: rgb(30, 30, 30);
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1600px) {
+  .menu {
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    height: 26px;
+    min-width: 800px;
+  }
+}

@@ -1,0 +1,45 @@
+.selection__button {
+  line-height: 120%;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: auto 0;
+  border: none;
+  background-color: black;
+  color: white;
+  width: auto;
+  height: 30px;
+  padding: 0 15px 0 15px;
+  white-space: nowrap;
+}
+
+#button-selection-load {
+  grid-column: 1/2;
+}
+
+#button-selection-data {
+  grid-column: 2/4;
+  margin: 20px 20px
+}
+
+#button-converter-data {
+  grid-column: 2/4;
+  margin: 20px 20px
+}
+
+.selection__button:hover  {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .selection__button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .selection__button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,17 @@
+.header__text {
+  font-size: 26px;
+  line-height: 120%;
+  margin: auto 0 0 10px;
+}
+
+@media screen and (max-width: 1600px) {
+  .header__text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__text {
+    font-size: 20px;
+  }
+}

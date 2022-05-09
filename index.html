@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="icon" href="./images/icon_light.png">
+  <title>Service</title>
+</head>
+<body class="page">
+  <h1 class="page__title">Добро пожаловать</h1>
+  <header class="header">
+    <div class="header__data">
+      <div class="header__title">
+        <a href=""><img src="./images/icon_light.png" class="header__image" alt="Лого"></a>
+        <h1 class="header__text">Выгрузка</h1>
+      </div>
+      <p class="header__language" title="Если вам нужна эта функция - обратитесь в поддержку">EN</p>
+      <img src="images/theme_dark.png" class="header__theme-select" alt="Сменить тему" title="Сменить тему"/>
+    </div>
+    <nav class="menu">
+      <li class="menu__element" id="loading-data">Выгрузить данные</li>
+      <li class="menu__element" id="calculate-data">Рассчитать по условиям</li>
+      <li class="menu__element" id="data-data">Данные</li>
+    </nav>
+  </header>
+  <main>
+    <!--<iframe src="" class="iframe"></iframe> -->
+    <!--loading-->
+    <section class="loading section-hide">
+      <div class="selection">
+        <form name="selection-date" class="selection__date">
+          <label class="selection__input-label">Старт</label>
+          <input type="date" name="date-start" placeholder="" required value="" class="selection__input">
+          <select required name="parameter" class="selection__select">
+            <option value=""></option>
+            <option value="Parameter_0">Parameter_0</option>
+            <option value="Parameter_1">Parameter_1</option>
+            <option value="Parameter_2">Parameter_2</option>
+            <option value="Parameter_3">Parameter_3</option>
+            <option value="Parameter_4">Parameter_4</option>
+            <option value="Parameter_5">Parameter_5</option>
+          </select>
+          <label class="selection__input-label">Финиш</label>
+          <input type="date" name="date-finish" placeholder="" required value="" class="selection__input">
+          <button type="submit" class="selection__button">Загрузить</button>
+        </form>
+        <form name="selection-load" class="selection__load">
+          <button type="submit" class="selection__button" id="button-selection-load">Загрузка</button>
+          <label class="checkbox-help">
+            <input type="checkbox" id="checkbox-help" name="checkbox-help">
+            <span class="selection__input-label">Помощь</span>
+          </label>
+        </form>
+      </div>
+      <table class="loading__table">
+        <tr class="loading__table-tr">
+          <th>Col0</th>
+          <th>Col1</th>
+          <th>Col2</th>
+          <th>Col3</th>
+          <th>Col4</th>
+          <th>Col5</th>
+          <th>Col6</th>
+          <th>Col7</th>
+          <th>Col8</th>
+          <th>Col9</th>
+          <th>Col10</th>
+          <th>Col11</th>
+          <th>Col12</th>
+          <th>Col13</th>
+        </tr>
+        <tr id="toFill"></tr>
+        <tr class="loading__table-tr">
+          <th>Col0</th>
+          <th>Col1</th>
+          <th>Col2</th>
+          <th>Col3</th>
+          <th>Col4</th>
+          <th>Col5</th>
+          <th>Col6</th>
+          <th>Col7</th>
+          <th>Col8</th>
+          <th>Col9</th>
+          <th>Col10</th>
+          <th>Col11</th>
+          <th>Col12</th>
+          <th>Col13</th>
+        </tr>
+        <tr class="loading__table-tr">
+          <th>Col0</th>
+          <th>Col1</th>
+          <th>Col2</th>
+          <th>Col3</th>
+          <th>Col4</th>
+          <th>Col5</th>
+          <th>Col6</th>
+          <th>Col7</th>
+          <th>Col8</th>
+          <th>Col9</th>
+          <th>Col10</th>
+          <th>Col11</th>
+          <th>Col12</th>
+          <th>Col13</th>
+        </tr>
+        <tr class="loading__table-tr">
+          <th>Col0</th>
+          <th>Col1</th>
+          <th>Col2</th>
+          <th>Col3</th>
+          <th>Col4</th>
+          <th>Col5</th>
+          <th>Col6</th>
+          <th>Col7</th>
+          <th>Col8</th>
+          <th>Col9</th>
+          <th>Col10</th>
+          <th>Col11</th>
+          <th>Col12</th>
+          <th>Col13</th>
+        </tr>
+        <tr class="loading__table-tr">
+          <th>Col0</th>
+          <th>Col1</th>
+          <th>Col2</th>
+          <th>Col3</th>
+          <th>Col4</th>
+          <th>Col5</th>
+          <th>Col6</th>
+          <th>Col7</th>
+          <th>Col8</th>
+          <th>Col9</th>
+          <th>Col10</th>
+          <th>Col11</th>
+          <th>Col12</th>
+          <th>Col13</th>
+        </tr>
+      </table>
+
+    </section>
+    <!--calculate-->
+    <section class="calculate section-hide">
+      <div class="selection">
+        <form name="calculate-form">
+          <select required name="parameter" class="selection__select">
+            <option value=""></option>
+            <option value="Parameter_0">Parameter_0</option>
+            <option value="Parameter_1">Parameter_1</option>
+            <option value="Parameter_2">Parameter_2</option>
+            <option value="Parameter_3">Parameter_3</option>
+            <option value="Parameter_4">Parameter_4</option>
+            <option value="Parameter_5">Parameter_5</option>
+          </select>
+          <select required name="parameter" class="selection__select">
+            <option value=""></option>
+            <option value="Parameter_0">Parameter_0</option>
+            <option value="Parameter_1">Parameter_1</option>
+            <option value="Parameter_2">Parameter_2</option>
+            <option value="Parameter_3">Parameter_3</option>
+            <option value="Parameter_4">Parameter_4</option>
+            <option value="Parameter_5">Parameter_5</option>
+          </select>
+          <button type="submit" class="selection__button">Начать расчёт</button>
+          <label class="checkbox-help">
+            <input type="checkbox" id="calculate-all" name="calculate-all">
+            <span class="selection__input-label">Расчёт всех условий</span>
+          </label>
+        </form>
+        <form name="calculate-help" class="checkbox-help">
+          <label>
+            <input type="checkbox" id="checkbox-help" name="checkbox-help">
+            <span class="selection__input-label">Помощь</span>
+          </label>
+        </form>
+      </div>
+      <form class="selection__form-choise">
+        <button type="button" class="selection__button">Загрузить короткую форму</button>
+        <button type="button" class="selection__button">Загрузить полную форму</button>
+      </form>
+      <table class="loading__table">
+        <tr class="loading__table-tr">
+          <th>Col0</th>
+          <th>Col1</th>
+          <th>Col2</th>
+          <th>Col3</th>
+          <th>Col4</th>
+          <th>Col5</th>
+          <th>Col6</th>
+          <th>Col7</th>
+          <th>Col8</th>
+          <th>Col9</th>
+          <th>Col10</th>
+          <th>Col11</th>
+          <th>Col12</th>
+          <th>Col13</th>
+        </tr>
+        <tr id="toFill"></tr>
+        <tr class="loading__table-tr">
+          <th>Col0</th>
+          <th>Col1</th>
+          <th>Col2</th>
+          <th>Col3</th>
+          <th>Col4</th>
+          <th>Col5</th>
+          <th>Col6</th>
+          <th>Col7</th>
+          <th>Col8</th>
+          <th>Col9</th>
+          <th>Col10</th>
+          <th>Col11</th>
+          <th>Col12</th>
+          <th>Col13</th>
+        </tr>
+      </table>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">© 2022 DataService</p>
+  </footer>
+
+<!--тут хранится help по нажатию на checkbox Помощь-->
+  <div class="help section-hide">
+    <iframe src="./vendor/help.html" class="help__iframe"></iframe>
+  </div>
+
+  <!--data-->
+  <div class="popup" id="popupData">
+    <div class="popup__content">
+      <button type="button" class="popup__cancel-button" id="cancelButtonEdit" title="Отмена"></button>
+        <div class="data__data">
+          <div class="data__forms">
+          <form name="data-form" class="data__form" id="data-form-data">
+            <label class="selection__input-label">
+              <span>A</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>B</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>C</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>D</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>E</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>F</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>G</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>H</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>I</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>J</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>K</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>L</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>M</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>N</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <button type="button" class="selection__button" id="button-selection-data">Данные агента</button>
+          </form>
+          <label class="selection__input section-hide" id="data-time-converter">
+            <span>Время</span>
+            <input type="time" name="data-time-converter" placeholder="" required value="">
+          </label>
+          <form name="data-form" class="data__form section-hide" id="data-form-converter">
+            <label class="selection__input-label">
+              <span>A</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>B</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>C</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>D</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>E</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>F</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>G</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>H</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>I</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>J</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>K</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>L</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>M</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <label class="selection__input-label">
+              <span>N</span>
+              <select required name="dataProperties" class="selection__select" id="dataPropertiesSelect">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select>
+            </label>
+            <button type="button" class="selection__button" id="button-converter-data">Конвертер</button>
+          </form>
+          </div>
+          <div class="data__block-switch">
+            <form name="data-help">
+              <label class="checkbox-help">
+                <input type="checkbox" id="converter" name="converter">
+                <span class="selection__input-label">Конвертер</span>
+              </label>
+              <label class="checkbox-help">
+                <input type="checkbox" id="checkbox-help-data" name="checkbox-help">
+                <span class="selection__input-label">Помощь</span>
+              </label>
+            </form>
+            <iframe src="./vendor/help.html" class="data__block-help section-hide"></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

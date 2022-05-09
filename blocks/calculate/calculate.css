@@ -1,0 +1,19 @@
+.calculate {
+  width: 80vw;
+  margin: 120px 0 30px 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1600px) {
+  .calculate {
+    margin: 110px 0 20px 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .calculate {   
+    margin: 100px 0 10px 2%;
+    min-width: 800px;
+  }
+}

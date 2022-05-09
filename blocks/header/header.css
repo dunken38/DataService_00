@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  right: 0;
+  width: 80vw;
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    left: 2%;
+    min-width: 800px;
+  }
+}

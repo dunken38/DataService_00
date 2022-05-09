@@ -1,0 +1,31 @@
+.menu__element {
+  line-height: 120%;
+  font-size: 18px;
+  border: 1px grey solid;
+  transition: 0.3s;
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 2px 10px 0 10px;
+}
+
+.menu__element:hover  {
+  cursor: pointer;
+  line-height: 130%;
+}
+
+@media screen and (max-width: 1600px) {
+  .menu__element {
+    font-size: 16px;
+    padding-top: 3px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu__element {
+    font-size: 14px;
+    padding-top: 4px;
+  }
+}

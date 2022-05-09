@@ -1,0 +1,18 @@
+.selection__load {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media screen and (max-width: 1600px) {
+  .selection__load {
+    
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .selection__load {
+    
+  }
+}
